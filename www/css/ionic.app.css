@@ -9774,6 +9774,7 @@ body {
   background: url(../img/abstract-bg-green.jpg);
   background-size: cover;
   -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
   position: absolute;
   left: 0;
   top: 0;
@@ -9838,12 +9839,18 @@ md-divider.margin {
 #levels-list p {
   margin: 0; }
 
+.hide-scrollbar {
+  overflow-y: hidden; }
+
 #my-progress i {
   margin-top: 32px;
   opacity: .35; }
 
 .info-button {
   float: right; }
+
+canvas {
+  max-height: 250px; }
 
 md-list.full-width {
   width: 100%; }

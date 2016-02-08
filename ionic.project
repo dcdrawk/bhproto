@@ -1,6 +1,6 @@
 {
   "name": "bhproto",
-  "app_id": "",
+  "app_id": "7746d6ba",
   "gulpStartupTasks": [
     "sass",
     "watch"
