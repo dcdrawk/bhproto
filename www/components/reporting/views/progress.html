@@ -1,0 +1,34 @@
+<md-card>
+  <md-card-title>
+    <md-card-title-text>
+      <span class="md-headline">My Progress
+      <md-button class="info-button md-icon-button" ng-click="vm.showProgressInfoDialog($event);">
+        <md-icon class="material-icons">help_outline</md-icon>
+      </md-button></span>
+    </md-card-title-text>
+  </md-card-title>
+
+  <md-card-content >
+
+    <section layout="row" layout-align="space-between" id="my-progress">
+    <div>
+      <p class="text-left">Current Level</p>
+      <div class="membership-level silver">
+
+        <span>{{vm.levelProgressDemo.level}}</span>
+      </div>
+    </div>
+    <!-- <i class="material-icons">chevron_right</i> -->
+    <div>
+      <p class="text-right">{{vm.levelProgressDemo.pointsToNextLevel}} points to</p>
+      <p class="text-right"><span  class="membership-level gold">Gold</span></p>
+    </div>
+    <!-- <div>
+      <div class="membership-level gold">
+        <span>{{vm.levelProgressDemo.nextLevel}}</span>
+      </div>
+    </div> -->
+  </section>
+  <md-progress-linear class="membership-progress" md-mode="determinate" value="{{vm.levelProgressDemo.level / vm.levelProgressDemo.nextLevel*100}}"></md-progress-linear>
+  </md-card-content>
+</md-card>

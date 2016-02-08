@@ -1,0 +1,23 @@
+ion-content {
+  &.md-padding {
+      padding-top:16px;
+      padding-bottom:16px;
+  }
+}
+ion-content {
+  background-color: #FAFAFA;
+}
+ion-side-menu {
+  background-color: #fff;
+}
+.chart-container, .chart {
+  width: 100%!important;
+}
+md-divider.margin {
+  margin: 8px 0;
+}
+#levels-list {
+  p {
+    margin: 0;
+  }
+}

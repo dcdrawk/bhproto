@@ -1,0 +1,16 @@
+md-dialog {
+  md-toolbar {
+    h2 {
+      color: rgba(255,255,255,0.87);
+    }    
+  }
+  &.dialog-small {
+    width: 400px;
+  }
+  &.dialog-medium {
+    width: 800px;
+  }
+  &.dialog-large {
+    width: 1200px;
+  }
+}

@@ -1,0 +1,39 @@
+<md-card>
+  <md-card-title>
+    <md-card-title-text>
+      <span class="md-headline">My Downstream</span>
+      <!-- <span class="md-subhead">Large</span> -->
+    </md-card-title-text>
+  </md-card-title>
+
+  <md-card-content layout="row" layout-align="space-between">
+    <md-list class="full-width">
+      <md-subheader class="md-no-sticky">2 Direct Connections</md-subheader>
+      <md-list-item ng-click="someAction();">
+        <img ng-src="http://placehold.it/48x48" class="md-avatar" alt="{{todos[0].who}}" />
+        <p class="md-body-2" flex="30">Davos Seaworth</p>
+        <div flex="25"  flex-gt-sm="50" class="text-right">
+          <span class="membership-level silver list-item text-center">45</span>
+        </div>
+         <md-icon ng-click="doSecondaryAction($event)" aria-label="Show More" class="md-secondary md-hue-3 material-icons">more_vert</md-icon>
+      </md-list-item>
+
+      <md-list-item ng-click="someAction();" class="indent">
+        <img ng-src="http://placehold.it/48x48" class="md-avatar" alt="{{todos[0].who}}" />
+        <p class="md-body-2" flex="30">Robert Baratheon</p>
+        <div flex="25"  flex-gt-sm="50" class="text-right">
+          <span class="membership-level silver list-item text-center">35</span>
+        </div>
+         <md-icon ng-click="doSecondaryAction($event)" aria-label="Show More" class="md-secondary md-hue-3 material-icons">more_vert</md-icon>
+      </md-list-item>
+      <md-list-item ng-click="someAction();">
+        <img ng-src="http://placehold.it/48x48" class="md-avatar" alt="{{todos[0].who}}" />
+        <p class="md-body-2" flex="30">Mel Rose</p>
+        <div flex="25"  flex-gt-sm="50" class="text-right">
+          <span class="membership-level bronze list-item text-center">15</span>
+        </div>
+         <md-icon ng-click="doSecondaryAction($event)" aria-label="Show More" class="md-secondary md-hue-3 material-icons">more_vert</md-icon>
+      </md-list-item>
+    </md-list>
+  </md-card-content>
+</md-card>

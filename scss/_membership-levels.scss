@@ -1,0 +1,45 @@
+.membership-level {
+  border-radius: 8px;
+  padding:8px;
+  min-width: 36px;
+  width: auto;
+  color:#fff;
+  // box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.35);
+  display: inline-block;
+  font-weight: 500;
+      line-height: 16px;
+  span {
+    display: block;
+    text-align: center;
+  }
+  &.menu-level {
+    float: right;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.35);
+  }
+  &.bronze {
+    background-color: #8D6E63;
+  }
+  &.silver {
+    background-color: #BDBDBD;
+  }
+  &.gold {
+    background-color: #FDD835;
+    color:rgba(0,0,0,.85);
+  }
+  &.distributor {
+    background-color: #F5F5F5;
+    color:rgba(0,0,0,.85);
+    &.manager{
+      background-color: #2196F3;
+      color:#fff;
+    }
+  }
+  &.premier {
+    background-color: #00BCD4;
+  }
+
+}
+
+.membership-progress {
+  margin: 16px 0;
+}

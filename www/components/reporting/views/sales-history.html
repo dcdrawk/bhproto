@@ -1,0 +1,12 @@
+<md-card>
+  <md-card-title>
+    <md-card-title-text>
+      <span class="md-headline">Sales History</span>
+      <span class="md-subhead">Past 3 Months</span>
+    </md-card-title-text>
+  </md-card-title>
+
+  <md-card-content layout="row" layout-align="space-between">
+    <canvas id="line" class="chart chart-line" chart-data="vm.data" chart-labels="vm.labels" chart-legend="true" chart-series="vm.series" chart-click="vm.onClick" responsive="true"></canvas>
+  </md-card-content>
+</md-card>

@@ -1,0 +1,60 @@
+<md-dialog aria-label="Progress Info" class="dialog-small">
+  <form>
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <h2>Progress Info</h2>
+        <span flex></span>
+        <md-button class="md-icon-button" ng-click="dialog.cancel()">
+          <md-icon class="material-icons" aria-label="Close dialog">close</md-icon>
+        </md-button>
+      </div>
+    </md-toolbar>
+    <md-dialog-content>
+      <!-- <md-card>
+        <md-card-title> -->
+          <!-- <md-card-title-text> -->
+
+          <!-- </md-card-title-text> -->
+        <!-- </md-card-title> -->
+
+        <!-- <md-card-content > -->
+          <!-- Here are the levels -->
+          <div id="levels-list" layout="column" layout-align="space-around" class="md-padding">
+            <span class="md-headline">Levels</span>
+            <div ng-repeat="level in dialog.membershipLevels">
+              <md-divider class="margin"></md-divider>
+              <div layout="row" layout-align="space-around">
+                <div flex="50">
+                  <p class="md-body-2">
+                    {{level.name}}
+                  </p>
+                  <p class="md-body-1">
+                    {{level.levelRequirement}}
+                  </p>
+                </div>
+                <div flex="50">
+                  <div class="membership-level {{level.name | lowercase}}">
+                    <span>{{level.placeholder}}</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        <!-- </md-card-content> -->
+      <!-- </md-card> -->
+    </md-dialog-content>
+    <!-- <md-dialog-actions layout="row">
+      <md-button href="http://en.wikipedia.org/wiki/Mango" target="_blank" md-autofocus>
+        More on Wikipedia
+      </md-button>
+      <span flex></span>
+      <md-button ng-click="dialog.answer('not useful')">
+        Not Useful
+      </md-button>
+      <md-button ng-click="dialog.answer('useful')" style="margin-right:20px;">
+        Useful
+      </md-button>
+    </md-dialog-actions> -->
+  </form>
+</md-dialog>

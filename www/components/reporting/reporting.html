@@ -1,0 +1,19 @@
+<ion-view view-title="Reporting">
+  <ion-content class="md-padding">
+
+    <!-- <h1 class="md-display-1">Reports</h1> -->
+
+    <section layout="row" layout-wrap>
+
+      <div flex-gt-sm="66" flex="100"  flex-order-sm="2"  flex-order-xs="2">
+        <div ui-view="sales-history"></div>
+        <div ui-view="downstream"></div>
+      </div>
+
+      <div flex-gt-sm="33" flex="100" flex-order-sm="1" flex-order-xs="1">
+        <div ui-view="progress"></div>
+        <div ui-view="recent-sales"></div>
+      </div>
+    </section>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,26 @@
+.bar.bar-stable.toolbar {
+  background-color: #607D8B;
+  border:0;
+}
+.bar.bar-stable.toolbar, .bar.bar-stable.toolbar .title {
+  height:56px;
+}
+ .bar.bar-stable.toolbar .title {
+   height:46px;
+   top:5px;
+   color: #fff;
+ }
+.bar .buttons {
+  height:46px;
+  vertical-align: middle;
+  margin-left:8px;
+}
+.has-header {
+  top:56px;
+}
+.back-text {
+  margin-left:8px;
+}
+.bar-stable .button.button-icon {
+  color:#fff;
+}
